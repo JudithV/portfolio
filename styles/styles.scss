@@ -5,17 +5,23 @@
     list-style: none;
 }
 
+// Variables (colors mainly)
+
 :root {
-    --color-primary: #124232;
+    --color-primary: #fce5cd;
+    --color-secondary: #9d6917;
     --color-black: #000;
     --color-white: #fff;
+    --color-grey: #bcbcbc;
+    --color-buttons-sections: #5d3e0d;
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
 
 body {
     font-family: 'Playfair Display', serif;
     background-color: var(--color-primary);
     font-size: 1.1rem;
-    color: var(--color-white);
+    color: var(--color-black);
     transition: all .4s erase-in-out;
 }
 
@@ -28,9 +34,11 @@ a {
 
 header {
     height: 100vh;
-    color: var(--color-white);
+    color: var(--color-black);
     overflow: hidden;
 }
+
+// Sections
 
 section {
     min-height: 100vh;
@@ -43,4 +51,65 @@ section {
 
 .section {
     transform: translateY(-100%);
+    transition: all .4s erase-in-out;
+    background-color: var(--color-primary);
+}
+
+.sec1 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec2 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec3 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec4 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+// Controls
+
+.controls {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    .active-btn {
+        background-color: var(--color-secondary) !important;
+        transition: all .4s erase-in-out;
+        i {
+            color: var(--color-white) !important;
+        }
+    }
+    .control {
+        padding: 1rem;
+        cursor: pointer;
+        background-color: var(--color-buttons-sections);
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: .7rem 0;
+        box-shadow: var(--box-shadow-1);
+        i {
+            font-size: 1.2rem;
+            color: var(--color-grey);
+            pointer-events: none;
+        }
+    }
 }
