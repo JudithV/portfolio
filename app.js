@@ -11,6 +11,27 @@ function SectionTransition(){
             this.classList += ' active-btn';
         })
     }
+
+    body.addEventListener('click', event => {
+        const id = event.target.dataset.id;
+        // Obtener la ID asignada en el HTML al elemento
+        if(id){
+            // Para los otros botones, borrar el Activo para activar la sección clickada
+            section_buttons.forEach((btn) => {
+                btn.classList.remove('active')
+            })
+            event.target.classList.add('active')
+
+            //Esconder las demás secciones
+            sections.forEach((section) => {
+                section.classList.remove('active')
+            })
+
+            //Añadir la clase "Activo" al elemento clickado
+            const element = document.getElementById(id);
+            element.classList.add('active')
+        }
+    })
 }
 
 SectionTransition();
