@@ -54,29 +54,28 @@ section {
     transition: all .4s erase-in-out;
     background-color: var(--color-primary);
 }
+.name {
+    color: #5d3e0d;
+}
 
 .sec1 {
     display: none;
     transform: translateY(0) scale(1);
-    background-color: #f28500;
 }
 
 .sec2 {
     display: none;
     transform: translateY(0) scale(1);
-    background-color: #8b4513;
 }
 
 .sec3 {
     display: none;
     transform: translateY(0) scale(1);
-    background-color: #f28500;
 }
 
 .sec4 {
     display: none;
     transform: translateY(0) scale(1);
-    background-color: #8b4513;
 }
 
 .active {
