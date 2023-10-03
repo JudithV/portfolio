@@ -6,16 +6,15 @@
 }
 
 :root {
-  --color-primary: #fce5cd;
-  --color-secondary: #9d6917;
-  --color-palette-1: #4e3c2a;
-  --color-palette-2: #9b7a59;
-  --color-palette-3: #c69c72;
-  --color-palette-4: #fbf4e8;
+  --color-primary: #2f3942;
+  --color-secondary: #A7C7E7;
+  --color-palette-1: #F0FFFF;
+  --color-palette-2: #6F8FAF;
+  --color-palette-3: #7393B3;
   --color-black: #000;
   --color-white: #fff;
   --color-grey: #bcbcbc;
-  --color-buttons-sections: #5d3e0d;
+  --color-buttons-sections: #6082B6;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
   --main-transition: all .4s ease-in-out;
   --btn-transition: all .4s ease-out;
@@ -25,7 +24,7 @@ body {
   font-family: "Playfair Display", serif;
   background-color: var(--color-primary);
   font-size: 1.1rem;
-  color: var(--color-black);
+  color: var(--color-white);
   transition: var(--main-transition);
 }
 
@@ -38,7 +37,7 @@ a {
 
 header {
   height: 100vh;
-  color: var(--color-black);
+  color: var(--color-white);
   overflow: hidden;
 }
 
@@ -58,7 +57,7 @@ section {
 }
 
 .name {
-  color: #5d3e0d;
+  color: var(--color-palette-1);
 }
 
 .sec1 {
@@ -150,15 +149,15 @@ section {
   left: 0;
   top: 0;
   z-index: -1;
-  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 90% 0, 69% 100%, 0% 100%);
+          clip-path: polygon(0 0, 90% 0, 69% 100%, 0% 100%);
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
   height: 90%;
   width: 68%;
   margin-left: 4rem;
-  background-color: var(--color-palette-1);
+  background-color: var(--color-palette-3);
   transition: var(--main-transition);
 }
 .header-content .left-header .image img {
@@ -234,4 +233,17 @@ section {
   background-color: var(--color-secondary);
   transform: translateX(0);
   transition: var(--btn-transition);
+}
+
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.main-title h2 span {
+  color: var(--color-secondary);
 }/*# sourceMappingURL=styles.css.map */
