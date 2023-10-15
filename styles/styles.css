@@ -382,7 +382,8 @@ section {
 .my-projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-gap: 2rem;
+  padding-bottom: 3rem;
   margin-top: 3rem;
 }
 .my-projects .project {
@@ -446,7 +447,6 @@ section {
 .contact-page-content .left-contact .contact-info .contact-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .contact-page-content .left-contact .contact-info .contact-item p {
   margin: 0.3rem 0 !important;
@@ -476,7 +476,7 @@ section {
   height: 50px;
   border-radius: 50%;
   margin: 0 0.4rem;
-  transition: all 0.4s ease-in-out;
+  transition: var(--main-transition);
 }
 .contact-page-content .left-contact .contact-icon a:hover {
   background-color: var(--color-secondary);
@@ -505,7 +505,7 @@ section {
   padding: 0.8rem 1.1rem;
   outline: none;
   border: none;
-  background-color: var(--color-palette-1);
+  background-color: var(--color-palette-3);
   width: 100%;
   color: var(--color-white);
   resize: none;
