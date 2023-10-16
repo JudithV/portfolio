@@ -1,2 +1,2 @@
-# My portfolio!
-My first portfolio, created using HTML, CSS and JavaScript.
+# ¡Mi portfolio!
+Mi primer portfolio, creado usando HTML, CSS y JavaScript. Para la lógica del envío de los correos, he utilizado [FormSubmit](https://formsubmit.co/), que automatiza este proceso sin necesidad de código adicional. Para el hosting he utilizado la solución gratis 000webhost. El enlace personalizado para este porfolio es https://judvican.000webhostapp.com/, pudiéndose ejecutar también en local con el código de este repositorio para realizar los cambios y pruebas que se vean convenientes.
